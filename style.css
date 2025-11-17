@@ -144,3 +144,20 @@ button:hover{
     color: #f26a03;
     text-decoration: none;
 }
+
+
+/* layout responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* stack vertikal */
+  }
+  
+  .form-row {
+    flex-direction: column; /* input jadi stack */
+    gap: 0;
+  }
+  
+  .left-side {
+    height: 200px; /* hero jadi pendek */
+  }
+}
