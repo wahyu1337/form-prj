@@ -34,7 +34,21 @@ h1{
 }
 
 input{
-    padding: 5px
+    padding: 9px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+button:hover{
+    cursor: pointer;
 }
 /* custom setup */
 .container{
@@ -52,7 +66,7 @@ input{
     display: flex;
     flex-direction: column;
     flex: 1.5;
-    background-color: rgb(241, 239, 239);
+    background-color: rgb(233, 233, 233);
 }
 
 .right-header{
@@ -82,14 +96,52 @@ input{
     display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 3px;
 }
 
 .form-group label{
     margin-top: 20px;
 }
 
+.form-group .pwd{
+    border: 1px solid red;
+}
+
 .right-footer{
+    margin-top: -25px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
     padding: 50px;
+}
+
+.right-footer button{
+    padding: 12px;
+    justify-content: center;
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f26a03;
+    color: white;
+    font-size: 14px;
+    box-shadow: 1.2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.right-footer button:hover{
+    background-color: #d45d03;
+}
+
+.right-footer button:active{
+    background-color: #f1812b;
+}
+
+.right-footer .login-form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.right-footer a{
+    color: #f26a03;
+    text-decoration: none;
 }
