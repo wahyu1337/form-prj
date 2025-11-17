@@ -66,6 +66,7 @@ button:hover{
     flex-direction: column;
     flex: 1.5;
     background-color: rgb(233, 233, 233);
+    gap: 0;
 }
 
 .right-header{
@@ -79,6 +80,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     background-color: white;
+    gap: 30px;
     padding: 50px;
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
     
@@ -99,7 +101,7 @@ button:hover{
 }
 
 .form-group label{
-    margin-top: 20px;
+    margin-top: px;
 }
 
 .form-group .pwd{
@@ -107,15 +109,16 @@ button:hover{
 }
 
 .right-footer{
-    margin-top: -25px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
+    height: 100%;
 }
 
 .right-footer button{
     padding: 12px;
+    margin-top: -25px;
     justify-content: center;
     width: 180px;
     border: none;
@@ -152,7 +155,7 @@ button:hover{
     flex-direction: column; /* stack vertikal */
   }
   
-  .form-row {
+  .right-content-form {
     flex-direction: column; /* input jadi stack */
     gap: 0;
   }
