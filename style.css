@@ -1,6 +1,95 @@
 /* default setup */
-
 *{
     margin: 0;
     padding: 0;
+    display: flex;
+}
+@font-face {
+    font-family: 'journalregular';
+    src: url('fonts/journal-webfont.woff2') format('woff2'),
+         url('fonts/journal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'momstypewriterregular';
+    src: url('fonts/momt___-webfont.woff2') format('woff2'),
+         url('fonts/momt___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'norse-bold';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+         url('fonts/Norse-Bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+
+h1{
+    font-family: 'sans-serif';
+}
+
+input{
+    padding: 5px
+}
+/* custom setup */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side{
+    flex: 1;
+    background-image: url(design/1017077.jpg);
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    background-color: rgb(241, 239, 239);
+}
+
+.right-header{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.right-content-form{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 500px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label{
+    margin-top: 20px;
+}
+
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
